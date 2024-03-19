@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Profile
+{% ednblock title %}
+
+{% block content %}
+
+    <h1>{{ request.user.username }}</h1>
+
+    {% for hotel in hotels %}
+        <div class="hotel">
+            <img src="{{ hotels.cover.url }}" alt="">
+            <a href="{% url 'hotel-detail' hotels.pk %}">
+                <h1>{{ hotels.name }}</h1>
+            </a>
+            <p>{{ hotels.author }}</p>
+        </div>
+
+{% endblock content %}

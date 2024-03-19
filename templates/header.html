@@ -1,0 +1,16 @@
+<div class="header">
+    <a href="">Home</a>
+
+    
+        {% if user.is_authenticated %}
+            <a class="datas" href="">Log out</a>
+            <a class="datas" href="">{{ user.username }}</a>
+            <a href="">Create hotel</a>
+        {% else %}
+            <a class="datas" href="">Log in</a>
+            <a class="datas" href="">Sign up</a>
+        {% endif %}
+
+    
+
+</div>

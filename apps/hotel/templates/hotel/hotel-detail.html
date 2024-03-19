@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Hotel
+{% endblock title %}
+
+{% block content %}
+
+    <img src="{{ hotel.cover.url }}" alt="">
+    <h1>{{ hotels.name }}</h1>
+    <h2>{{ hotels.description }}</h2>
+    <h2>Address {{ hotels.address }}</h2>
+    <h2>City {{ hotels.address }}</h2>
+    <h2>Country {{ hotels.country }}</h2>
+    <h2>Rating {{ hotels.rating }}</h2>
+
+{% endblock content %}

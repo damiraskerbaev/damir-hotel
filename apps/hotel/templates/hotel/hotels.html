@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Hotels
+{% endblock title %}
+
+{% block content %}
+
+    {% for hotel in hotels %}
+        <div class="hotel">
+            <img src="{{ hotel.cover.url }}" alt="">
+            <a href="">
+                <h1>{{ hotels.name }}</h1>
+            </a>
+        </div>
+    {% endfor %}
+
+{% endblock content %}
